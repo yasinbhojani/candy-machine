@@ -8,7 +8,7 @@ using namespace std;
 class CandyMachine{
     int candy, chips, gum, cookies;
     int option, quantity, total_price;
-    int candy_q, chips_q, gum_q, cookies_q;
+    int candy_q = 0, chips_q = 0, gum_q = 0, cookies_q = 0;
     public:
     CandyMachine()
     {
