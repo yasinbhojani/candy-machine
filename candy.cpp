@@ -7,7 +7,7 @@
 using namespace std;
 class CandyMachine{
     int candy, chips, gum, cookies;
-    int option, quantity, total_price;
+    int option, quantity, total_price, temp_q;
     int candy_q = 0, chips_q = 0, gum_q = 0, cookies_q = 0;
     public:
     CandyMachine()
@@ -33,22 +33,26 @@ class CandyMachine{
             {
                 case 1 :
                 cout << "Enter the quantity of candy you want to buy : ";
-                cin  >> candy_q;
+                cin  >> temp_q;
+                candy_q = candy_q + temp_q;
                 candy = candy_q * candy_p;
                 break;
                 case 2 :
                 cout << "Enter the quantity of chips you want to buy : ";
-                cin  >> chips_q;
+                cin  >> temp_q;
+                chips_q = chips_q + temp_q;
                 chips = chips_q * chips_p;
                 break;
                 case 3 :
                 cout << "Enter the quantity of gum you want to buy : ";
-                cin  >> gum_q;
+                cin  >> temp_q;
+                gum_q = gum_q + temp_q;
                 gum = gum_q * gum_p;
                 break;
                 case 4 :
                 cout << "Enter the quantity of cookies you want to buy : ";
-                cin  >> cookies_q;
+                cin  >> temp_q;
+                cookies_q = cookies_q + temp_q;
                 cookies = cookies_q * cookies_p;
                 break;
                 default :
